@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      RPC
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label fixed>Request</ion-label>
+      <ion-input type="text" [(ngModel)]="requestValue"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Response</ion-label>
+      <ion-input type="text" [(ngModel)]="responseValue"></ion-input>
+    </ion-item>
+
+    <ion-list-header>{{displayResponse}}</ion-list-header>
+
+    <ion-item>
+      <button ion-button (click)="handleClick()">Make</button>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
